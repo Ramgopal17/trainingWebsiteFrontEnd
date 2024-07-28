@@ -1,0 +1,25 @@
+.formInputStyle{
+  top:30PX;
+  left:20px;
+  color:rgb(108,96,254);
+  transform:translateY(-50%)
+}
+
+.formSubmitBtn{
+  width: 45% !important;
+  background-color: rgb(255,60,88);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.formSubmitBtn:hover{
+  background-color: rgb(108,96,254);
+}
+
+.formSubmitBtnHover:hover{
+  background-color: rgb(108,96,254);
+}

@@ -1,0 +1,123 @@
+.loginFormDiv a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.loginFormDiv button {
+  border-radius: 20px;
+  background-color: var(--tp-theme-cornblue);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.5s ease;
+}
+.loginFormDiv button:hover {
+  background-color: #324da0;
+}
+
+.loginFormDiv button:active {
+  transform: scale(0.95);
+}
+
+.loginFormDiv form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  width: min(100%, 600px);
+  text-align: center;
+}
+
+.loginFormDiv input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+.loginFormDiv input::placeholder {
+  color: grey;
+}
+.loginFormDiv .firstLastName {
+  width: 100%;
+  gap: 16px;
+}
+.loginFormDiv .firstLastName > * {
+  flex: 1;
+}
+
+.social-container {
+  margin: 20px 0;
+}
+
+.social-container a,
+.social-container .googleLoginDiv {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.social-container a.facebook {
+  background-color: #4867aa;
+}
+.social-container a.google {
+  background-color: #e94235;
+}
+.social-container .googleLoginDiv {
+  background-color: #e94235;
+  color: white;
+}
+.social-container a.linkedin {
+  background-color: #0077b5;
+}
+.insideContainer .imgDiv {
+  /* height: 100%; */
+  background-image: url(/assets/img/login_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formDiv span,
+.formDiv a.redirectLink {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--tp-grey-3);
+  margin-bottom: 15px;
+}
+.formDiv a.redirectLink {
+  color: #324da0;
+}
+.passShowHideDiv {
+  width: 100%;
+  position: relative;
+}
+.passShowHideDiv i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  cursor: pointer;
+}
+#verify-btn {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .loginFormDiv form {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,10 @@
+@import url(./footer/footer.css);
+
+
+:root{
+  --customBlue : rgb(12,84,173);
+}
+
+::selection{
+  background-color: var(--customBlue);
+}

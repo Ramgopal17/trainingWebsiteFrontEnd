@@ -1,0 +1,33 @@
+.paymentMethod img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.checkoutContainer .courseInfo {
+  padding: 20px;
+  width: min(400px, 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.checkoutContainer .courseInfo img {
+  border-radius: 8px;
+  width: 100%;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.checkoutContainer .backBtn {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--tp-theme-cornblue);
+}
+.checkoutContainer .backBtn:hover {
+  color: var(--tp-theme-redical);
+}

@@ -1,0 +1,128 @@
+.extraInfoDiv {
+  position: relative;
+  top: -60px;
+}
+
+.extraInfoDiv .dataHolder {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.extraInfoDiv .parentDiv div:not(:last-child) {
+  border-right: 1px solid var(--tp-theme-cornblue);
+}
+
+@media (max-width: 991px) {
+  .extraInfoDiv .parentDiv div:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid var(--tp-theme-cornblue);
+  }
+}
+.SkillsPara {
+  display: flex;
+  align-items: center;
+}
+.SkillsPara i {
+  width: 30px;
+  height: 30px;
+  background-color: #086d38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 400;
+}
+.toggleMoreLessBtn {
+  padding: 5px 10px;
+  background-color: var(--tp-theme-cornblue);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-out;
+  margin: 20px 0;
+}
+
+.toggleMoreLessBtn:hover {
+  background-color: var(--tp-theme-redical);
+}
+.keyFeaturesDiv {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+.keyFeaturesDiv ul li {
+  color: var(--tp-grey-3);
+  padding-left: 35px;
+  /* font-size: 16px; */
+  /* margin-bottom: 5px; */
+  position: relative;
+}
+.keyFeaturesDiv ul li::before {
+  content: "✔";
+  width: 10px;
+  height: 10px;
+  color: #324da0;
+  position: absolute;
+  left: 0;
+}
+
+.fullSyllabusDiv {
+  border-radius: 8px;
+}
+.fullSyllabusDiv .singleSyl {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.fullSyllabusDiv .title {
+  background-color: #fcb713;
+  margin-bottom: 5px;
+  padding: 10px 40px 10px 20px;
+  cursor: pointer;
+  position: relative;
+  /* pointer-events: none; */
+}
+.fullSyllabusDiv .singleSyl.open .title {
+  margin-bottom: 0;
+}
+.fullSyllabusDiv .desc {
+  background-color: #fff9ea;
+  padding: 10px 20px;
+  display: none;
+  transition: all 0.3s ease-out 0s;
+}
+.fullSyllabusDiv .singleSyl.open .desc {
+  display: block;
+}
+
+.fullSyllabusDiv .singleSyl .rotateArrow {
+  transform: translateY(-50%) rotate(-90deg);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+.fullSyllabusDiv .singleSyl.open .rotateArrow {
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.enrollNowCard {
+  background-color: #dbfdeb;
+  width: min(100%, 500px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.enrollNowCard .heading {
+  background-color: #086d38;
+  padding: 20px 10px;
+}
+.enrollNowCard .heading * {
+  color: white;
+  text-align: center;
+}
+.enrollNowCard .desc {
+  padding: 20px 10px;
+}

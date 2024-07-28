@@ -1,0 +1,94 @@
+.courseList {
+  background-color: #e6ecef;
+  width: 300px;
+  padding: 30px 0;
+  overflow-y: auto;
+}
+.courseCat {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin: 0;
+}
+.courseList ul li {
+  padding: 10px 20px;
+  position: relative;
+  cursor: pointer;
+}
+.courseList ul li.active {
+  background-color: white;
+  color: #324da0;
+  font-weight: 500;
+}
+.courseList ul li.active::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url(/assets/img/right-arrow.png);
+  background-size: cover;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.description {
+  width: 100%;
+  position: relative;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+.category-btn {
+  bottom: 20px;
+}
+
+.popularCourses {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.singleCourse {
+  background-color: #e6ecefa5;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: min(500px, 100%);
+}
+
+.singleCourse ul li {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.singleCourse .courseName {
+  font-weight: bold;
+}
+.singleCourse ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: black;
+}
+/* width */
+.allCoursesDropdown ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.allCoursesDropdown ::-webkit-scrollbar-track {
+  background: #dee3f5;
+}
+
+/* Handle */
+.allCoursesDropdown ::-webkit-scrollbar-thumb {
+  background: #97a7df;
+}
+
+/* Handle on hover */
+.allCoursesDropdown ::-webkit-scrollbar-thumb:hover {
+  background: #324da0;
+}

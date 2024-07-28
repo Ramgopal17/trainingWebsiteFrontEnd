@@ -1,0 +1,38 @@
+.courseCatDiv .topBanner {
+  background: linear-gradient(to right, #033d73, #136b98);
+}
+.courseCatDiv .topBanner * {
+  color: white;
+}
+
+.courseCatDiv .certificateImg {
+  width: min(100%, 400px);
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.needHelpWrapper {
+  background-color: #fcb713;
+}
+
+/* @media (max-width: 1199px) {
+  .courseCatDiv .certificateImg {
+    left: 0px;
+  }
+} */
+@media (max-width: 991px) {
+  .courseCatDiv .certificateImg {
+    position: relative;
+    top: 0;
+  }
+
+  .courseCatDiv .certificateImgDiv {
+    position: static;
+  }
+  /* display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }  */
+}

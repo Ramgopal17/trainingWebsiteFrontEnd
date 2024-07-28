@@ -1,0 +1,40 @@
+.lecture .top-info {
+  background-color: aqua;
+  background: linear-gradient(to right, #0bbd60, #159753);
+}
+
+.lecture .top-info img {
+  width: min(100%, 500px);
+  border-radius: 8px;
+}
+
+.lecture .top-info p {
+  color: white;
+}
+
+.lecture .review-form {
+  width: min(600px, 100%);
+}
+.lecture .review-form textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 20px;
+  resize: none;
+}
+.lecture .review-form textarea::placeholder {
+  color: gray;
+}
+
+@media (max-width: 425px) {
+  .lecture .course-Info-div {
+    display: block;
+  }
+  .lecture .course-Info-div p {
+    width: 100% !important;
+  }
+}

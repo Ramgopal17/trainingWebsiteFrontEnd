@@ -1,0 +1,46 @@
+.myCoursesList .courseInfoCard {
+  background: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.myCoursesList .courseInfoCard img {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.myCoursesList .courseInfoCard .infoDiv {
+  background-color: white;
+  position: relative;
+  margin: 0 10px;
+  top: -20px;
+  padding: 30px 10px 0;
+
+  border-radius: 8px;
+}
+
+.myCoursesList .courseInfoCard .ratingBarDiv {
+  height: 3px;
+  background-color: #cccccc;
+  position: relative;
+  /* margin-bottom: 10px; */
+}
+.myCoursesList .courseInfoCard .ratingBarDiv .ratingBar {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 3px;
+  background-color: #324da0;
+  width: 40%;
+}
+
+.myCoursesList .courseInfoCard .ratingInfo p {
+  margin-bottom: 0;
+  color: #818181;
+  font-size: 14px;
+}

@@ -1,0 +1,217 @@
+.dataContain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigCircle{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: radial-gradient( rgb(255, 0, 0) , rgb(240, 162, 143));
+  position: relative;
+}
+.smallCircle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.singleServiceCircle{
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+  border-radius: 50%;
+  position: absolute;
+}
+.singleServiceCircle:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.singleServiceCircle:hover .content{
+  background-color: white;
+  border-left: 2px solid red;
+}
+.singleServiceCircle:hover .content .desc{
+  display: block;
+}
+
+.singleServiceCircle:nth-child(1){
+  left: 42%;
+  top:20px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(2){
+  left: 71%;
+  top:80px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(3){
+  left: 78%;
+  top:210px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(4){
+  left: 58%;
+  top:300px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(5){
+  left: 25%;
+  top:300px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(6){
+  left: 6%;
+  top:210px;
+  /* transform: translateX(-50%); */
+}
+.singleServiceCircle:nth-child(7){
+  left: 13%;
+  top:80px;
+  /* transform: translateX(-50%); */
+}
+
+.singleServiceCircle .content{
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+.singleServiceCircle .content .desc{
+  display: none;
+}
+.singleServiceCircle .contentNO1{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO1::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO2{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO2::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO3{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO3::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO4{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO4::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO5{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO5::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO6{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO6::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+.singleServiceCircle .contentNO7{
+  top: -100px;
+  left: 50px;
+}
+.singleServiceCircle .contentNO7::before{
+  content: "";
+  /* background-color: aqua; */
+  display: block;
+  position: absolute;
+  left: -25px;
+  top:20px;
+  width: 20px;
+  height: 80px;
+  border: 2px dashed black;
+  border-right:none ;
+  border-bottom: none;
+}
+
+
+@media(max-width:768px){
+  .dataContain{
+    transform: scale(0.5);
+  }
+}

@@ -1,0 +1,163 @@
+.viewCertificateCard {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgb(238, 238, 238);
+  padding: 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.viewCertificateCard:hover {
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+}
+
+.viewCertificateCard .courseName {
+  border-right: 1px solid var(--tp-theme-cornblue);
+  gap: 20px;
+}
+
+.viewCertificateCard .courseName .courseImg {
+  width: 200px;
+  /* aspect-ratio: 16/9; */
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+/* ================download ================ */
+.downloadContainer .backBtn i {
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--tp-theme-cornblue);
+}
+.downloadContainer .backBtn i:hover {
+  color: var(--tp-theme-redical);
+}
+
+.downloadContainer .CourseCertificateImg {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.downloadContainer .socialMediaLinks {
+  display: flex;
+  gap: 20px;
+}
+.downloadContainer .socialMediaLinks .links {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.downloadContainer .socialMediaLinks .links:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  animation: shakeLink 1s ease-in-out 1;
+  -webkit-animation: shakeLink 1s ease-in-out 1;
+}
+
+@keyframes shakeLink {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+  75% {
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+}
+
+.downloadContainer .socialMediaLinks .links.facebook {
+  background-color: #4867aa;
+}
+.downloadContainer .socialMediaLinks .links.linkedin {
+  background-color: #0077b5;
+}
+.downloadContainer .socialMediaLinks .links.twitter {
+  background-color: #1da1f2;
+}
+
+.downloadContainer .downloadCertificate i {
+  font-size: 50px;
+  cursor: pointer;
+  color: #086d38;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.downloadContainer .downloadCertificate i:hover {
+  animation: shakeLink 1s ease-in-out 1;
+  -webkit-animation: shakeLink 1s ease-in-out 1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px;
+}
+
+#svg-container svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .viewCertificateCard .courseName .courseImg {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .viewCertificateCard .courseName {
+    border-bottom: 1px solid var(--tp-theme-cornblue);
+    border-right: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .downloadContainer .certificateInfo .courseName h1 {
+    font-size: 25px;
+  }
+  .downloadContainer h3.heading {
+    font-size: 24px;
+  }
+}

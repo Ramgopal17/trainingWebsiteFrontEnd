@@ -1,0 +1,141 @@
+.profileDiv .SidebarDiv {
+  width: 250px;
+  background-color: #e8f0f7;
+  padding-top: 30px;
+  padding-left: 20px;
+  border-right: 4px solid #3d7fe7;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.profileDiv .SidebarDiv i {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: var(--tp-theme-cornblue);
+  cursor: pointer;
+}
+.profileDiv .SidebarDiv i:hover {
+  color: var(--tp-theme-redical);
+}
+
+.profileDiv .sidebarOpenBtn {
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.profileDiv .SidebarDiv ul li {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.profileDiv .SidebarDiv ul li.active {
+  background-color: #3d7fe7;
+  color: white;
+}
+
+.profileDiv .InfoDiv {
+  position: relative;
+  padding: 0px 50px 100px;
+  top: 50px;
+}
+
+.profileDiv .InfoDiv .profileImg {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+}
+
+.profileDiv .InfoDiv #clickButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  background-color: var(--tp-theme-cornblue);
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 400;
+  margin-left: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 70px;
+}
+.profileDiv .InfoDiv #clickButton:hover {
+  background-color: var(--tp-theme-redical);
+}
+.profileDiv .InfoDiv .textInp {
+  height: 50px !important;
+  padding-left: 10px;
+}
+.profileDiv .InfoDiv .genderInp {
+  width: 20px !important;
+  height: 20px;
+  margin-right: 5px;
+}
+.profileDiv .InfoDiv .workDurationInp {
+  width: 95px;
+  height: 50px;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.profileDiv .addBtnDiv {
+  font-size: 16px;
+  color: #3d7fe7;
+  cursor: pointer;
+}
+
+.profileDiv .deleteBtn i {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--tp-theme-cornblue);
+}
+.profileDiv .deleteBtn i:hover {
+  color: var(--tp-theme-redical);
+}
+
+/* .profileDiv .adjustMinHeight {
+  min-height: 600px;
+} */
+
+@media (max-width: 991px) {
+  .profileDiv .SidebarDiv {
+    position: fixed;
+    z-index: 100;
+    top: 77px;
+    left: -250px;
+  }
+  .profileDiv .adjustMinHeight {
+    min-height: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .profileDiv .SidebarDiv {
+    top: 107px;
+  }
+  .profileDiv .InfoDiv .workDurationInp {
+    width: 100px;
+  }
+}
+@media (max-width: 425px) {
+  .profileDiv .SidebarDiv {
+    top: 81px;
+  }
+  .profileDiv .InfoDiv {
+    padding: 0px 0px 100px;
+  }
+}

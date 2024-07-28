@@ -1,0 +1,148 @@
+/* @import url(../global.css); */
+
+.header{
+  background-color: rgba(244,244,244, 0.7);
+  color: var(--customBlue);
+  padding-top: 10px;
+}
+
+.header .hiddenHeader{
+  display: flex;
+  justify-content: space-between;
+  /* color: red !important; */
+}
+
+.header .hiddenHeader i{
+  color: var(--customBlue);  
+}
+
+.header .contact p{
+  display: inline-block;
+  padding-left:10px ;
+  color: gray;
+}
+.header .contact p strong{
+  color: black;
+}
+
+.hiddenHeader .contact{
+  font-size: 15px;
+  display: flex;
+  gap: 30px;
+}
+
+.header .socialIconDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.header .socialIconDiv i{
+    color: #fff !important;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 13px;
+    width: 28px;
+    height: 28px;
+    /* line-height: 29px; */
+    opacity: 0.8;
+    border-radius: 50%;
+    background: var(--customBlue); 
+}
+
+.header .socialIconDiv i:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.header .logoAndMenu img{
+  width: 40px;
+}
+
+.header .logoAndMenu{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header .logoAndMenu .menu > ul{
+  display: flex;
+  gap: 30px;
+}
+
+.header .logoAndMenu .menu > ul li{
+  position: relative;
+  font-size: 15px;
+}
+
+.header .logoAndMenu .menu > ul li a{
+  color: black;
+}
+
+
+.header .logoAndMenu .menu ul li .aTag::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  opacity: 0;
+  height: 2px;
+  background-color: var(--customBlue); 
+}
+
+.header .logoAndMenu .menu ul li a:hover{
+  color: var(--customBlue); 
+}
+
+.header .logoAndMenu .menu ul li:hover .aTag::after{
+  width: 70%;
+  opacity: 1;
+}
+
+.header .logoAndMenu .menu ul li a:hover + .dropdownMenu{
+  opacity: 1;
+  /* transform: translateY(140%); */
+  visibility: visible;
+  top: 60px;
+}
+
+.header .dropdownMenu{
+  position: absolute;
+  background-color: white;
+    left: -20px;
+    opacity: 0;
+    top: 70px;
+    /* transform: translateY(160%); */
+    transition: all 0.3s ;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    visibility: hidden;
+    width: 200px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.header .logoAndMenu .menu ul li .dropdownMenu:hover{
+  opacity: 1;
+  top: 60px;
+  visibility: visible;
+}
+
+.header .dropdownMenu li{
+  padding-bottom: 10px;
+}
+
+.header .dropdownMenu li:hover{
+  color: var(--customBlue); 
+  cursor: pointer;
+}
+
+
+@media (max-width: 990px){
+  .hiddenHeader .contact{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

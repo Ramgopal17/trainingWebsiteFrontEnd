@@ -1,0 +1,88 @@
+.popupContainer {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 999;
+  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.popupNotification {
+  /* position: fixed;
+  top: 150px;
+  left: 50%; */
+  /* transform: translateX(-50%); */
+  width: min(100%, 600px);
+  /* height: 500px; */
+  background-color: #fff3d9;
+  z-index: 999;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  position: relative;
+  /* padding: 60px 20px 20px; */
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  /* overflow: hidden; */
+}
+
+.popupNotification .closePopup {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--tp-theme-cornblue);
+}
+
+.popupNotification .closePopup:hover {
+  color: var(--tp-theme-redical);
+}
+.popupNotification .courseName {
+  height: 100px;
+  padding: 20px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fde4d0;
+}
+
+.popupNotification .courseDesc {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+@media (max-width: 425px) {
+  .popupNotification .courseName {
+    padding-top: 50px;
+  }
+  .popupNotification .courseDesc .imgInfoWrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ==============delete account================ */
+#popupDeleteContainer ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  display: flex;
+}
+
+#popupDeleteContainer ul li p {
+  padding-left: 35px;
+
+  position: relative;
+}
+#popupDeleteContainer ul li p::before {
+  content: "✔";
+  width: 10px;
+  height: 10px;
+  color: #324da0;
+  position: absolute;
+  left: 0;
+}

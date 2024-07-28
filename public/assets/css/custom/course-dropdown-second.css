@@ -1,0 +1,68 @@
+.dropdownContainer {
+  /*width: min(100%, 700px);
+  */
+  position: absolute;
+  /* left: 50%; */
+  top: 68px;
+  z-index: 100;
+  left: -100%;
+  /* transform: translateX(-50%); */
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: none;
+}
+.dropdownContainer > * {
+  width: 250px;
+  /* background-color: aliceblue; */
+}
+.dropdownContainer .paddingWrapper {
+  padding: 10px 0;
+}
+.dropdownContainer p {
+  padding: 10px;
+  margin: 0 !important;
+  cursor: pointer;
+  position: relative;
+}
+.dropdownContainer p:hover {
+  background-color: white;
+}
+
+.dropdownContainer .mainTypes p:after,
+.dropdownContainer .secondChild p:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: url(/assets/img/right-arrow.png);
+  background-size: cover;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dropdownContainer > :not(:first-child) {
+  border-left: 1px solid gray;
+}
+.dropdownContainer > :not(:first-child) {
+  display: none;
+}
+.dropdownContainer > :not(:first-child):hover {
+  display: block;
+}
+.dropdownContainer .paddingWrapper a {
+  padding: 0 !important;
+  text-transform: capitalize;
+  width: 100%;
+}
+.dropdownContainer .paddingWrapper p.active {
+  color: var(--tp-theme-cornblue);
+  background-color: var(--tp-theme-bg-5);
+}
+.dropdownContainer .coursesList p:hover {
+  color: var(--tp-theme-cornblue);
+  background-color: var(--tp-theme-bg-5);
+}

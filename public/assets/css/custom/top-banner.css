@@ -1,0 +1,41 @@
+.topBannerHome {
+  /* height: 600px; */
+  background-color: aliceblue;
+  background-image: url(/assets/img/topBanner.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+.topBannerHome .infoCard {
+  left: 100px;
+  padding: 120px 0;
+}
+.topBannerHome .bannerWrapper {
+  width: min(100%, 600px);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 8px;
+}
+.topBannerHome .carouselInfo .title2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+
+  color: var(--tp-theme-vogue) !important;
+}
+
+@media (max-width: 767px) {
+  .topBannerHome .carouselInfo .title2 {
+    font-size: 40px;
+  }
+  .topBannerHome .infoCard {
+    left: 100px;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .topBannerHome .carouselInfo .title2 {
+    font-size: 25px;
+  }
+}
